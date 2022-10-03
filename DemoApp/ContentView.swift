@@ -6,14 +6,24 @@
 //
 
 import SwiftUI
+import DataFlow
+import ViewFlow
 
 struct ContentView: View {
+    
+    @SharedState var presentState: TestPresentState
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Button {
+//                presentState.fullScreenPresent = true
+                presentState.isPresent = true
+            } label: {
+                Image(systemName: "globe")
+                    .imageScale(.large)
+                    .foregroundColor(.accentColor)
+                Text("Hello, world!")
+            }
         }
     }
 }

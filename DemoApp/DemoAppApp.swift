@@ -6,12 +6,21 @@
 //
 
 import SwiftUI
+import Combine
+import PresentFlow
 
 @main
 struct DemoAppApp: App {
+    
+    var monitorCancellable: AnyCancellable
+    
+    init() {
+        self.monitorCancellable = PresentMonitor.shared.addObserver(MonitorObserver.shared)
+    }
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
         }
     }
 }
