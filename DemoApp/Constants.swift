@@ -6,13 +6,14 @@
 //
 
 import Foundation
+import ViewFlow
 import PresentFlow
 
 enum RouteTo {
     static let firstView = PresentFirstView.defaultRoute
-    static let secondView = PresentRoute<Void>(routeId: "PresentSecondView")
-    static let thirdView = PresentRoute<String>(routeId: "PresentThirdView")
-    static let fourthView = PresentRoute<Void>(routeId: "PresentFourthView")
+    static let secondView = ViewRoute<Void>(routeId: "PresentSecondView")
+    static let thirdView = ViewRoute<String>(routeId: "PresentThirdView")
+    static let fourthView = ViewRoute<Void>(routeId: "PresentFourthView")
 }
 
-let s_presentRouteFirst = PresentRoute<Void>(routeId: "first")
+let s_ViewRouteFirst = ViewRoute<Void>(routeId: "first")
