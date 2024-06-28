@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import PresentFlow
 
 struct PresentRootView: View {
     
@@ -14,6 +13,21 @@ struct PresentRootView: View {
     
     var body: some View {
         VStack {
+            // FlowGrid {
+            //     Text("")
+            // }
+            FlowGrid {
+                Text("Present")
+                Text("Preseesent")
+                Text("Presentasdf")
+                Text("Pres")
+                Text("Presentasdfsadf")
+                Text("Pre")
+                Text("Prese")
+                Text("Present")
+                Text("Presentsdf")
+            }
+            .background(Color.red)
             Button(action: {
                 presentManager.present(PresentFirstView.self)
             }) {
@@ -39,6 +53,15 @@ struct PresentRootView: View {
                 presentManager.present(PresentFourthView.self)
             }) {
                 Text("Present Four")
+            }
+            .padding(.bottom, 20)
+            
+            Button(action: {
+                let vc = PresentUIViewController()
+                vc.modalPresentationStyle = .fullScreen
+                ViewCenter.shared.topViewController?.present(vc, animated: true)
+            }) {
+                Text("Present UIViewController")
             }
 //            Button(action: {
 //                Store<PresentState>.shared.send(action: .present(MailView.self))

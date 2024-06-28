@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import PresentFlow
 
 struct PresentFirstOtherView: VoidPresentableView {
     
@@ -17,7 +16,7 @@ struct PresentFirstOtherView: VoidPresentableView {
         ZStack {
             VStack {
                 Button(action: {
-                    presentManager.dismiss()
+                    presentManager.dismissTopView()
                 }) {
                     Text("Dismiss Use Manager")
                 }

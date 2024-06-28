@@ -14,10 +14,21 @@
 		343EBB372898192900982CD7 /* DemoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343EBB362898192900982CD7 /* DemoAppTests.swift */; };
 		343EBB412898192900982CD7 /* DemoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343EBB402898192900982CD7 /* DemoAppUITests.swift */; };
 		343EBB432898192900982CD7 /* DemoAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343EBB422898192900982CD7 /* DemoAppUITestsLaunchTests.swift */; };
-		343EBB512898AB4100982CD7 /* ViewFlow in Frameworks */ = {isa = PBXBuildFile; productRef = 343EBB502898AB4100982CD7 /* ViewFlow */; };
 		343EBB55289AA7DF00982CD7 /* TestPresentState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343EBB54289AA7DF00982CD7 /* TestPresentState.swift */; };
 		343EBB57289AAE5B00982CD7 /* FullScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343EBB56289AAE5B00982CD7 /* FullScreenView.swift */; };
-		34E0CC9428EB05ED00E7420D /* PresentFlow in Frameworks */ = {isa = PBXBuildFile; productRef = 34E0CC9328EB05ED00E7420D /* PresentFlow */; };
+		344FDE952A751EF400F4C53A /* PushSecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344FDE942A751EF400F4C53A /* PushSecondView.swift */; };
+		344FDE982A75265D00F4C53A /* PushThirdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344FDE962A75265D00F4C53A /* PushThirdView.swift */; };
+		344FDE992A75265D00F4C53A /* PushFourthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344FDE972A75265D00F4C53A /* PushFourthView.swift */; };
+		344FDE9C2A7526FD00F4C53A /* PushFirstOtherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344FDE9A2A7526FD00F4C53A /* PushFirstOtherView.swift */; };
+		344FDE9D2A7526FD00F4C53A /* PushSecondOtherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344FDE9B2A7526FD00F4C53A /* PushSecondOtherView.swift */; };
+		34956CA02A45514E002CCE5D /* FlowGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34956C9F2A45514E002CCE5D /* FlowGrid.swift */; };
+		349726AB2C273558000750A2 /* AppPackages in Frameworks */ = {isa = PBXBuildFile; productRef = 349726AA2C273558000750A2 /* AppPackages */; };
+		34D133F829F5908E00198DEF /* ViewCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D133F729F5908E00198DEF /* ViewCenter.swift */; };
+		34D133FA29F5917E00198DEF /* PresentUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D133F929F5917E00198DEF /* PresentUIViewController.swift */; };
+		34D4D9ED29BE186200023F0B /* SecondAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D4D9EC29BE186200023F0B /* SecondAlertView.swift */; };
+		34EC0A4C2A74002A0093EA41 /* NavigationRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EC0A4B2A74002A0093EA41 /* NavigationRootView.swift */; };
+		34EC0A4E2A7403700093EA41 /* PushFirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EC0A4D2A7403700093EA41 /* PushFirstView.swift */; };
+		34EC21F92958519D00E11186 /* AlertRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EC21F82958519D00E11186 /* AlertRootView.swift */; };
 		34F6FAC528DB69960094F736 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F6FAC428DB69960094F736 /* MainView.swift */; };
 		34F6FAC828DB6AFD0094F736 /* PresentRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F6FAC728DB6AFD0094F736 /* PresentRootView.swift */; };
 		34F6FACA28DC98FB0094F736 /* PresentFirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F6FAC928DC98FB0094F736 /* PresentFirstView.swift */; };
@@ -63,6 +74,19 @@
 		343EBB54289AA7DF00982CD7 /* TestPresentState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPresentState.swift; sourceTree = "<group>"; };
 		343EBB56289AAE5B00982CD7 /* FullScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenView.swift; sourceTree = "<group>"; };
 		343EBB58289AAE6A00982CD7 /* TestPresentedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPresentedView.swift; sourceTree = "<group>"; };
+		344FDE942A751EF400F4C53A /* PushSecondView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushSecondView.swift; sourceTree = "<group>"; };
+		344FDE962A75265D00F4C53A /* PushThirdView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushThirdView.swift; sourceTree = "<group>"; };
+		344FDE972A75265D00F4C53A /* PushFourthView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushFourthView.swift; sourceTree = "<group>"; };
+		344FDE9A2A7526FD00F4C53A /* PushFirstOtherView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushFirstOtherView.swift; sourceTree = "<group>"; };
+		344FDE9B2A7526FD00F4C53A /* PushSecondOtherView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushSecondOtherView.swift; sourceTree = "<group>"; };
+		34956C9F2A45514E002CCE5D /* FlowGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowGrid.swift; sourceTree = "<group>"; };
+		349726A82C2733E2000750A2 /* AppPackages */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = AppPackages; sourceTree = "<group>"; };
+		34D133F729F5908E00198DEF /* ViewCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCenter.swift; sourceTree = "<group>"; };
+		34D133F929F5917E00198DEF /* PresentUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentUIViewController.swift; sourceTree = "<group>"; };
+		34D4D9EC29BE186200023F0B /* SecondAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondAlertView.swift; sourceTree = "<group>"; };
+		34EC0A4B2A74002A0093EA41 /* NavigationRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRootView.swift; sourceTree = "<group>"; };
+		34EC0A4D2A7403700093EA41 /* PushFirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushFirstView.swift; sourceTree = "<group>"; };
+		34EC21F82958519D00E11186 /* AlertRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertRootView.swift; sourceTree = "<group>"; };
 		34F6FAC428DB69960094F736 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		34F6FAC728DB6AFD0094F736 /* PresentRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentRootView.swift; sourceTree = "<group>"; };
 		34F6FAC928DC98FB0094F736 /* PresentFirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentFirstView.swift; sourceTree = "<group>"; };
@@ -80,8 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34E0CC9428EB05ED00E7420D /* PresentFlow in Frameworks */,
-				343EBB512898AB4100982CD7 /* ViewFlow in Frameworks */,
+				349726AB2C273558000750A2 /* AppPackages in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,10 +128,12 @@
 		343EBB182898192600982CD7 = {
 			isa = PBXGroup;
 			children = (
+				349726A82C2733E2000750A2 /* AppPackages */,
 				343EBB232898192600982CD7 /* DemoApp */,
 				343EBB352898192900982CD7 /* DemoAppTests */,
 				343EBB3F2898192900982CD7 /* DemoAppUITests */,
 				343EBB222898192600982CD7 /* Products */,
+				349726A92C273558000750A2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -177,15 +202,57 @@
 		343EBB5A289AC04F00982CD7 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				34956C9E2A455127002CCE5D /* FlowGrid */,
 			);
 			path = Libs;
+			sourceTree = "<group>";
+		};
+		34956C9E2A455127002CCE5D /* FlowGrid */ = {
+			isa = PBXGroup;
+			children = (
+				34956C9F2A45514E002CCE5D /* FlowGrid.swift */,
+			);
+			path = FlowGrid;
+			sourceTree = "<group>";
+		};
+		349726A92C273558000750A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		34EC0A4A2A7400080093EA41 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				34EC0A4B2A74002A0093EA41 /* NavigationRootView.swift */,
+				34EC0A4D2A7403700093EA41 /* PushFirstView.swift */,
+				344FDE9A2A7526FD00F4C53A /* PushFirstOtherView.swift */,
+				344FDE942A751EF400F4C53A /* PushSecondView.swift */,
+				344FDE9B2A7526FD00F4C53A /* PushSecondOtherView.swift */,
+				344FDE962A75265D00F4C53A /* PushThirdView.swift */,
+				344FDE972A75265D00F4C53A /* PushFourthView.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		34EC21F72958517800E11186 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				34EC21F82958519D00E11186 /* AlertRootView.swift */,
+				34D4D9EC29BE186200023F0B /* SecondAlertView.swift */,
+			);
+			path = Alert;
 			sourceTree = "<group>";
 		};
 		34F6FAC328DB68EF0094F736 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				34EC0A4A2A7400080093EA41 /* Navigation */,
+				34EC21F72958517800E11186 /* Alert */,
 				34F6FAC628DB69A50094F736 /* Present */,
 				34F6FAC428DB69960094F736 /* MainView.swift */,
+				34D133F729F5908E00198DEF /* ViewCenter.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -200,6 +267,7 @@
 				34F6FADA28E0ACCD0094F736 /* PresentSecondOtherView.swift */,
 				34F6FAD428DCAA890094F736 /* PresentThirdView.swift */,
 				34F6FACD28DC99530094F736 /* PresentFourthView.swift */,
+				34D133F929F5917E00198DEF /* PresentUIViewController.swift */,
 			);
 			path = Present;
 			sourceTree = "<group>";
@@ -221,8 +289,7 @@
 			);
 			name = DemoApp;
 			packageProductDependencies = (
-				343EBB502898AB4100982CD7 /* ViewFlow */,
-				34E0CC9328EB05ED00E7420D /* PresentFlow */,
+				349726AA2C273558000750A2 /* AppPackages */,
 			);
 			productName = DemoApp;
 			productReference = 343EBB212898192600982CD7 /* DemoApp.app */;
@@ -297,8 +364,6 @@
 			);
 			mainGroup = 343EBB182898192600982CD7;
 			packageReferences = (
-				343EBB4F2898AB4100982CD7 /* XCRemoteSwiftPackageReference "view-flow" */,
-				34E0CC9228EB05ED00E7420D /* XCRemoteSwiftPackageReference "present-flow" */,
 			);
 			productRefGroup = 343EBB222898192600982CD7 /* Products */;
 			projectDirPath = "";
@@ -342,20 +407,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34D4D9ED29BE186200023F0B /* SecondAlertView.swift in Sources */,
 				34F6FADD28E1D5FD0094F736 /* MonitorObserver.swift in Sources */,
 				34F6FAC528DB69960094F736 /* MainView.swift in Sources */,
+				344FDE9C2A7526FD00F4C53A /* PushFirstOtherView.swift in Sources */,
+				344FDE992A75265D00F4C53A /* PushFourthView.swift in Sources */,
+				34D133FA29F5917E00198DEF /* PresentUIViewController.swift in Sources */,
 				343EBB55289AA7DF00982CD7 /* TestPresentState.swift in Sources */,
 				34F6FAD528DCAA890094F736 /* PresentThirdView.swift in Sources */,
 				343EBB57289AAE5B00982CD7 /* FullScreenView.swift in Sources */,
+				34956CA02A45514E002CCE5D /* FlowGrid.swift in Sources */,
+				34EC0A4C2A74002A0093EA41 /* NavigationRootView.swift in Sources */,
 				34F6FACE28DC99530094F736 /* PresentFourthView.swift in Sources */,
 				34F6FAD128DC9DED0094F736 /* Constants.swift in Sources */,
+				344FDE982A75265D00F4C53A /* PushThirdView.swift in Sources */,
+				34EC21F92958519D00E11186 /* AlertRootView.swift in Sources */,
+				34D133F829F5908E00198DEF /* ViewCenter.swift in Sources */,
 				343EBB272898192600982CD7 /* ContentView.swift in Sources */,
 				34F6FAD928E059DD0094F736 /* PresentFirstOtherView.swift in Sources */,
+				344FDE952A751EF400F4C53A /* PushSecondView.swift in Sources */,
 				34F6FADB28E0ACCD0094F736 /* PresentSecondOtherView.swift in Sources */,
 				34F6FACC28DC990D0094F736 /* PresentSecondView.swift in Sources */,
 				343EBB252898192600982CD7 /* DemoAppApp.swift in Sources */,
 				34F6FACA28DC98FB0094F736 /* PresentFirstView.swift in Sources */,
 				34F6FAC828DB6AFD0094F736 /* PresentRootView.swift in Sources */,
+				34EC0A4E2A7403700093EA41 /* PushFirstView.swift in Sources */,
+				344FDE9D2A7526FD00F4C53A /* PushSecondOtherView.swift in Sources */,
 				34F6FACF28DC9D1F0094F736 /* TestPresentedView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -508,10 +585,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = DemoApp/DemoApp.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DemoApp/Preview Content\"";
-				DEVELOPMENT_TEAM = 2QLCT7DGXB;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 2QLCT7DGXB;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -526,6 +604,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.miejoy.DemoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = AllApp_Dev;
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -540,10 +620,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = DemoApp/DemoApp.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DemoApp/Preview Content\"";
-				DEVELOPMENT_TEAM = 2QLCT7DGXB;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 2QLCT7DGXB;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -558,6 +639,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.miejoy.DemoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = AllApp_Dev;
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -697,35 +780,10 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		343EBB4F2898AB4100982CD7 /* XCRemoteSwiftPackageReference "view-flow" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/miejoy/view-flow.git";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
-		34E0CC9228EB05ED00E7420D /* XCRemoteSwiftPackageReference "present-flow" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/miejoy/present-flow.git";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
 /* Begin XCSwiftPackageProductDependency section */
-		343EBB502898AB4100982CD7 /* ViewFlow */ = {
+		349726AA2C273558000750A2 /* AppPackages */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 343EBB4F2898AB4100982CD7 /* XCRemoteSwiftPackageReference "view-flow" */;
-			productName = ViewFlow;
-		};
-		34E0CC9328EB05ED00E7420D /* PresentFlow */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 34E0CC9228EB05ED00E7420D /* XCRemoteSwiftPackageReference "present-flow" */;
-			productName = PresentFlow;
+			productName = AppPackages;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -6,23 +6,46 @@
 //
 
 import SwiftUI
-import PresentFlow
+import NavigationFlow
 
 struct MainView: View {
+    
+    @State var arrPath: [String] = []
+    
     var body: some View {
-        PresentFlowView {
-            TabView {
-                PresentRootView()
-                    .tabItem {
-                        Image(systemName: "circle.grid.3x3")
-                            .font(.system(size: 20))
-                        Text("Present")
-                    }
-            }
+        TabView {
+            PresentRootView()
+                .tabItem {
+                    Image(systemName: "circle.grid.3x3")
+                        .font(.system(size: 20))
+                    Text("Present")
+                }
+            AlertRootView()
+                .tabItem {
+                    Image(systemName: "circle.grid.3x3")
+                        .font(.system(size: 20))
+                    Text("Alert")
+                }
+            NavigationRootView()
+                // .modifier(NavigationStackModifier(shared: .root))
+                .tabItem {
+                    Image(systemName: "circle.grid.3x3")
+                        .font(.system(size: 20))
+                    Text("Navigation")
+                }
         }
+        .modifier(NavigationStackModifier(shared: .main))
+        .modifier(AlertModifier())
+        .modifier(PresentModifier())
         .registerPresentOn { presentCenter in
-            presentCenter.registePresentableView(PresentThirdView.self, for: RouteTo.thirdView)
-            presentCenter.registePresentableView(PresentFourthView.self, for: RouteTo.fourthView)
+            presentCenter.registerPresentableView(PresentThirdView.self, for: RouteTo.thirdView)
+            presentCenter.registerPresentableView(PresentFourthView.self, for: RouteTo.fourthView)
+        }
+        .registerPresentedModifier { content, sceneId, level in
+            content
+//                .modifier(NavigationStackModifier("Level-\(level)-"))
+                .modifier(AlertModifier(level: level))
+            
         }
     }
 }

@@ -7,7 +7,10 @@
 
 import SwiftUI
 import Combine
-import PresentFlow
+@_exported import DataFlow
+@_exported import PresentFlow
+@_exported import NavigationFlow
+@_exported import AlertFlow
 
 @main
 struct DemoAppApp: App {
@@ -16,9 +19,16 @@ struct DemoAppApp: App {
     
     init() {
         self.monitorCancellable = PresentMonitor.shared.addObserver(MonitorObserver.shared)
+        NavigationCenter.shared.registerDefaultPushableView(PushFirstView.self)
+        NavigationCenter.shared.registerDefaultPushableView(PushFirstOtherView.self)
     }
     
     var body: some Scene {
+        WindowGroup {
+            MainView()
+                .environment(\.sceneId, .custom("Second"))
+        }
+        
         WindowGroup {
             MainView()
         }

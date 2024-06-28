@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import PresentFlow
 
 struct PresentThirdView: PresentableView {
     
@@ -24,22 +23,22 @@ struct PresentThirdView: PresentableView {
             VStack {
                 VStack {
                     Button(action: {
-                        presentManager.dismiss()
+                        presentManager.dismissTopView()
                     }) {
                         Text("Dismiss Top View")
                     }
                     
                     Button(action: {
-                        presentManager.dismiss()
-                        presentManager.dismiss()
+                        presentManager.dismissTopView()
+                        presentManager.dismissTopView()
                     }) {
                         Text("Dismiss Two Presented View")
                     }
                     
                     Button(action: {
-                        presentManager.dismiss()
-                        presentManager.dismiss()
-                        presentManager.dismiss()
+                        presentManager.dismissTopView()
+                        presentManager.dismissTopView()
+                        presentManager.dismissTopView()
                     }) {
                         Text("Dismiss Three Presented View")
                     }
@@ -80,6 +79,15 @@ struct PresentThirdView: PresentableView {
                     }) {
                         Text("Present First Other View On Root And Sencond")
                     }
+                }
+                .padding(.bottom, 20)
+                
+                Button(action: {
+                    let vc = PresentUIViewController()
+                    vc.modalPresentationStyle = .fullScreen
+                    ViewCenter.shared.topViewController?.present(vc, animated: true)
+                }) {
+                    Text("Present UIViewController")
                 }
             }
         }

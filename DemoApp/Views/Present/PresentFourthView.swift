@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import PresentFlow
 
 struct PresentFourthView: VoidPresentableView {
     @Environment(\.presentManager) var presentManager
@@ -17,16 +16,16 @@ struct PresentFourthView: VoidPresentableView {
             VStack {
                 VStack {
                     Button(action: {
-                        presentManager.dismiss()
+                        presentManager.dismissTopView()
                     }) {
                         Text("Dismiss Top View")
                     }
                     
                     Button(action: {
-                        presentManager.dismiss()
-                        presentManager.dismiss()
-                        presentManager.dismiss()
-                        presentManager.dismiss()
+                        presentManager.dismissTopView()
+                        presentManager.dismissTopView()
+                        presentManager.dismissTopView()
+                        presentManager.dismissTopView()
                     }) {
                         Text("Dismiss Four Presented View")
                     }

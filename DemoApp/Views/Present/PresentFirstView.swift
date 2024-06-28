@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import PresentFlow
 
 struct PresentFirstView: VoidPresentableView {
     
@@ -19,7 +18,7 @@ struct PresentFirstView: VoidPresentableView {
             VStack {
                 VStack {
                     Button(action: {
-                        presentManager.dismiss()
+                        presentManager.dismissTopView()
                     }) {
                         Text("Dismiss Use Manager")
                     }
@@ -54,6 +53,16 @@ struct PresentFirstView: VoidPresentableView {
                         Text("Unfreeze This View")
                     }
                 }
+                .padding(.bottom, 20)
+                
+                Button(action: {
+                    let vc = PresentUIViewController()
+                    vc.modalPresentationStyle = .fullScreen
+                    ViewCenter.shared.topViewController?.present(vc, animated: true)
+                }) {
+                    Text("Present UIViewController")
+                }
+                   
             }
             VStack {
                 Text("First View")

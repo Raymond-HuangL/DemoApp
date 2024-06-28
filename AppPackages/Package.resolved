@@ -24,7 +24,7 @@
       "location" : "https://gogs.miejoy.com:4443/Swift/navigation-flow.git",
       "state" : {
         "branch" : "master",
-        "revision" : "af6c5ea4e8d4280625643663c96b739fa1c14076"
+        "revision" : "c58ecf428e38c9b09f6200b5f803dc865dda946e"
       }
     },
     {
@@ -33,7 +33,7 @@
       "location" : "https://github.com/miejoy/present-flow.git",
       "state" : {
         "branch" : "main",
-        "revision" : "48b9ab504ba7a9992e910f31cbbea6b601f7daf6"
+        "revision" : "7bdc9e60d75dbd2889613d523b8a0c1542ea6191"
       }
     },
     {
