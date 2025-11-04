@@ -16,3 +16,5 @@ enum RouteTo {
 }
 
 let s_ViewRouteFirst = ViewRoute<Void>("first")
+
+let s_appSceneId: SceneId = .custom("Second")

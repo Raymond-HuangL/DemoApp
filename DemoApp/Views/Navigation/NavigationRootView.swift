@@ -6,10 +6,12 @@
 //
 
 import SwiftUI
+import NavigationFlow
 
 struct NavigationRootView: View {
     
     @Environment(\.navStack) var navStack
+    @Environment(\.navManager) var navManager
     
     var body: some View {
         // NavigationView {
@@ -18,6 +20,12 @@ struct NavigationRootView: View {
                     navStack?.push(PushFirstView())
                 } label: {
                     Text("Push One View")
+                }
+                
+                Button {
+                    navManager.sharedNavStack(of: .main)?.push(PushFirstView())
+                } label: {
+                    Text("Push One View On Main Nav")
                 }
                 
                 Button {

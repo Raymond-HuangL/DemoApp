@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		342E05F22E8975B1001AE335 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342E05F12E8975AA001AE335 /* AppDelegate.swift */; };
 		343EBB252898192600982CD7 /* DemoAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343EBB242898192600982CD7 /* DemoAppApp.swift */; };
 		343EBB272898192600982CD7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343EBB262898192600982CD7 /* ContentView.swift */; };
 		343EBB292898192900982CD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 343EBB282898192900982CD7 /* Assets.xcassets */; };
@@ -60,6 +61,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		342E05F12E8975AA001AE335 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		343EBB212898192600982CD7 /* DemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		343EBB242898192600982CD7 /* DemoAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoAppApp.swift; sourceTree = "<group>"; };
 		343EBB262898192600982CD7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 				34F6FAC328DB68EF0094F736 /* Views */,
 				343EBB5A289AC04F00982CD7 /* Libs */,
 				343EBB53289AA7CB00982CD7 /* States */,
+				342E05F12E8975AA001AE335 /* AppDelegate.swift */,
 				343EBB242898192600982CD7 /* DemoAppApp.swift */,
 				343EBB262898192600982CD7 /* ContentView.swift */,
 				343EBB56289AAE5B00982CD7 /* FullScreenView.swift */,
@@ -411,6 +414,7 @@
 				34F6FADD28E1D5FD0094F736 /* MonitorObserver.swift in Sources */,
 				34F6FAC528DB69960094F736 /* MainView.swift in Sources */,
 				344FDE9C2A7526FD00F4C53A /* PushFirstOtherView.swift in Sources */,
+				342E05F22E8975B1001AE335 /* AppDelegate.swift in Sources */,
 				344FDE992A75265D00F4C53A /* PushFourthView.swift in Sources */,
 				34D133FA29F5917E00198DEF /* PresentUIViewController.swift in Sources */,
 				343EBB55289AA7DF00982CD7 /* TestPresentState.swift in Sources */,
@@ -597,15 +601,15 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.miejoy.DemoApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.miejoy.App;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = AllApp_Dev;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = App_Dev;
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -632,15 +636,15 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.miejoy.DemoApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.miejoy.App;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = AllApp_Dev;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = App_Dev;
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;

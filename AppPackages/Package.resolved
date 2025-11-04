@@ -15,7 +15,7 @@
       "location" : "https://github.com/miejoy/data-flow.git",
       "state" : {
         "branch" : "main",
-        "revision" : "b01f7ed41a527c3751b90d48ed1d8c2ea0022ee3"
+        "revision" : "2bed25e0f4fa378a6a7f44093a7dd7ed57c23b00"
       }
     },
     {
@@ -24,7 +24,7 @@
       "location" : "https://gogs.miejoy.com:4443/Swift/navigation-flow.git",
       "state" : {
         "branch" : "master",
-        "revision" : "c58ecf428e38c9b09f6200b5f803dc865dda946e"
+        "revision" : "af6c5ea4e8d4280625643663c96b739fa1c14076"
       }
     },
     {
@@ -33,7 +33,7 @@
       "location" : "https://github.com/miejoy/present-flow.git",
       "state" : {
         "branch" : "main",
-        "revision" : "7bdc9e60d75dbd2889613d523b8a0c1542ea6191"
+        "revision" : "48b9ab504ba7a9992e910f31cbbea6b601f7daf6"
       }
     },
     {
@@ -42,7 +42,7 @@
       "location" : "https://github.com/miejoy/view-flow.git",
       "state" : {
         "branch" : "main",
-        "revision" : "d55612b4f10eaa3db55df6cfbd6699d471c7155e"
+        "revision" : "a32b1eefa88b186c6fefed03cb53617004050df4"
       }
     }
   ],

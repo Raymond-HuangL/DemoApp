@@ -27,7 +27,7 @@ struct MainView: View {
                     Text("Alert")
                 }
             NavigationRootView()
-                // .modifier(NavigationStackModifier(shared: .root))
+                .modifier(NavigationStackModifier(shared: .root))
                 .tabItem {
                     Image(systemName: "circle.grid.3x3")
                         .font(.system(size: 20))

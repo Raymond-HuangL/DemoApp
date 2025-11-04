@@ -14,7 +14,8 @@ import Combine
 
 @main
 struct DemoAppApp: App {
-    
+    // 关联 AppDelegate
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     var monitorCancellable: AnyCancellable
     
     init() {
@@ -26,7 +27,7 @@ struct DemoAppApp: App {
     var body: some Scene {
         WindowGroup {
             MainView()
-                .environment(\.sceneId, .custom("Second"))
+                .environment(\.sceneId, s_appSceneId)
         }
         
         WindowGroup {

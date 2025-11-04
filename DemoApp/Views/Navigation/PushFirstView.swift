@@ -25,6 +25,12 @@ struct PushFirstView: VoidPushableView, VoidPresentableView {
             } label: {
                 Text("Dismiss Top View")
             }
+            
+            Button {
+                navStack?.popToRoot()
+            } label: {
+                Text("Pop To Root View")
+            }
             .padding(.bottom, 20)
             
             Button {

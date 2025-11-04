@@ -26,16 +26,16 @@ struct AlertRootView: View {
             } label: {
                 Text("Show Normal Alert")
             }
-//            Button {
-//                alertManager.showStrongAlert("This is a strong alert")
-//            } label: {
-//                Text("Show Strong Alert")
-//            }
-//            Button {
-//                alertManager.showWeakAlert("This is a weak alert")
-//            } label: {
-//                Text("Show Weak Alert")
-//            }
+            Button {
+                alertManager.showStrongAlert("This is a strong alert")
+            } label: {
+                Text("Show Strong Alert")
+            }
+            Button {
+                alertManager.showWeakAlert("This is a weak alert")
+            } label: {
+                Text("Show Weak Alert")
+            }
 
             Button(action: {
                 alertManager.showAlert(
@@ -66,38 +66,161 @@ struct AlertRootView: View {
             }) {
                 Text("Show Full Alert")
             }
-//            Button {
-//                let alertId = alertManager.showAlert("This alert will auto dismiss")
-//                Timer.scheduledTimer(withTimeInterval: 2, repeats: false) { timer in
-//                    alertManager.dismissAlert(with: alertId)
-//                }
-//            } label: {
-//                Text("Show Alert Auto Dismiss")
-//            }
+            .padding(.bottom, 20)
+            
             Button {
-                alertCount = 1
-                alertManager.showAlert("This alert with count \(alertCount)")
-                Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { timer in
-                    if self.alertCount < maxAlertCount {
-                        self.alertCount += 1
-                        alertManager.showAlert("This alert with count \(alertCount)")
-                    } else {
-                        // alertManager.dismissAlert(with: alertId)
-                        timer.invalidate()
-                    }
+                let alertId = alertManager.showAlert("This alert will auto dismiss")
+                Timer.scheduledTimer(withTimeInterval: 2, repeats: false) { timer in
+                    alertManager.dismissAlert(with: alertId)
                 }
             } label: {
-                Text("Show \(maxAlertCount) Alert")
+                Text("Show Alert Auto Dismiss")
+            }
+            Button {
+                alertManager.showAlert("This is first alert")
+                let alertId = alertManager.showAlert("This alert will auto dismiss")
+                Timer.scheduledTimer(withTimeInterval: 2, repeats: false) { timer in
+                    alertManager.dismissAlert(with: alertId)
+                }
+            } label: {
+                Text("Show Two Alert, Auto Dismiss Last")
             }
             .padding(.bottom, 20)
             
             Button {
-                presentManager.presentFullCover(SecondAlertView.self)
+                Task {
+                    alertManager.showAlert("This normal alert with count 1")
+                    
+                    try? await Task.sleep(for: .seconds(1))
+                    
+                    alertManager.showAlert("This normal alert with count 2",nil,
+                        [
+                            .init(title: "Confirm 2", action: {
+                            })
+                        ]
+                    )
+                }
             } label: {
-                Text("Show Alert On Presented Page")
+                Text("Show 2 Normal Alert")
             }
+            
+            Button {
+                Task {
+                    alertManager.showStrongAlert("This strong alert with count 1")
+                    
+                    try? await Task.sleep(for: .seconds(1))
+                    
+                    alertManager.showStrongAlert("This strong alert with count 2")
+                }
+            } label: {
+                Text("Show 2 Strong Alert")
+            }
+            
+            Button {
+                Task {
+                    alertManager.showWeakAlert("This weak alert with count 1")
+                    
+                    try? await Task.sleep(for: .seconds(1))
+                    
+                    alertManager.showWeakAlert("This weak alert with count 2")
+                }
+            } label: {
+                Text("Show 2 Weak Alert")
+            }
+            .padding(.bottom, 20)
+            
+            
+            Button {
+                Task {
+                    alertManager.showAlert("This is a normal alert")
+                    
+                    try? await Task.sleep(for: .seconds(1))
+                    
+                    alertManager.showStrongAlert("This is a strong alert")
+                }
+            } label: {
+                Text("Show Strong Alert After Normal")
+            }
+            
+            Button {
+                Task {
+                    alertManager.showStrongAlert("This is a strong alert")
+                    
+                    try? await Task.sleep(for: .seconds(1))
+                    
+                    alertManager.showAlert("This is a normal alert")
+                }
+            } label: {
+                Text("Show Normal Alert After Strong")
+            }
+            
+            Button {
+                Task {
+                    alertManager.showAlert("This is a normal alert")
+                    
+                    try? await Task.sleep(for: .seconds(1))
+                    
+                    alertManager.showWeakAlert("This is a weak alert")
+                }
+            } label: {
+                Text("Show Weak Alert After Normal")
+            }
+            
+            Button {
+                Task {
+                    alertManager.showWeakAlert("This is a weak alert")
+                    
+                    try? await Task.sleep(for: .seconds(1))
+                    
+                    alertManager.showAlert("This is a normal alert")
+                }
+            } label: {
+                Text("Show Normal Alert After Weak")
+            }
+                        
+            Button {
+                Task {
+                    alertManager.showWeakAlert("This is a weak alert")
+                    
+                    try? await Task.sleep(for: .seconds(1))
+                    
+                    alertManager.showStrongAlert("This is a strong alert")
+                }
+            } label: {
+                Text("Show Strong Alert After Weak")
+            }
+            
+            Button {
+                Task {
+                    alertManager.showStrongAlert("This is a strong alert")
+                    
+                    try? await Task.sleep(for: .seconds(1))
+                    
+                    alertManager.showWeakAlert("This is a weak alert")
+                }
+            } label: {
+                Text("Show Weak Alert After Strong")
+            }
+            .padding(.bottom, 20)
+            
+            Button {
+                Task {
+                    let result: TestAlertResult = await alertManager.showAlert("This alert result will return while click", nil, [.init(title: "first", result: .first), .init(title: "second", result: .second)])
+                    
+                    print("click \(result) button")
+                }
+            } label: {
+                Text("Show Alert With Click Result")
+            }
+            .padding(.bottom, 20)
         }
     }
+}
+
+enum TestAlertResult: AlertResult {
+    case cancel
+    case first
+    case second
 }
 
 struct AlertRootView_Previews: PreviewProvider {

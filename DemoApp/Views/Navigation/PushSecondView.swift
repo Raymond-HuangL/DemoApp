@@ -22,6 +22,13 @@ struct PushSecondView: VoidPushableView {
             .padding(.bottom, 20)
             
             Button {
+                navStack?.remove(with: PushFirstView.defaultRoute)
+            } label: {
+                Text("Remove First View")
+            }
+            .padding(.bottom, 20)
+            
+            Button {
                 presentManager.present(PresentFirstView.self)
             } label: {
                 Text("Present First View")

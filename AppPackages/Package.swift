@@ -1,4 +1,4 @@
-// swift-tools-version: 5.7
+// swift-tools-version: 5.10
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -6,8 +6,8 @@ import PackageDescription
 let package = Package(
     name: "AppPackages",
     platforms: [
-        .macOS(.v12),
-        .iOS(.v16),
+        .macOS(.v14),
+        .iOS(.v17),
     ],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
@@ -21,8 +21,8 @@ let package = Package(
         .package(url: "https://github.com/miejoy/data-flow.git", branch: "main"),
         .package(url: "https://github.com/miejoy/view-flow.git", branch: "main"),
         .package(url: "https://github.com/miejoy/present-flow.git", branch: "main"),
-        .package(url: "https://gogs.miejoy.com:4443/Swift/navigation-flow.git", branch: "master"),
-        .package(url: "https://gogs.miejoy.com:4443/Swift/alert-flow.git", branch: "master"),
+        .package(url: "https://github.com/miejoy/navigation-flow.git", branch: "main"),
+        .package(url: "https://github.com/miejoy/alert-flow.git", branch: "main"),
     ],
     targets: [
         .target(

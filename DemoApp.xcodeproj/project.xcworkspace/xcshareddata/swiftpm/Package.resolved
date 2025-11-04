@@ -3,10 +3,10 @@
     {
       "identity" : "alert-flow",
       "kind" : "remoteSourceControl",
-      "location" : "https://gogs.miejoy.com:4443/Swift/alert-flow.git",
+      "location" : "https://github.com/miejoy/alert-flow.git",
       "state" : {
-        "branch" : "master",
-        "revision" : "6059611d662ef3f26b1d0cae68ce8ffb3134a89a"
+        "branch" : "main",
+        "revision" : "f786ca171b6b994ae1734ba0df29dc5d2539885c"
       }
     },
     {
@@ -15,16 +15,16 @@
       "location" : "https://github.com/miejoy/data-flow.git",
       "state" : {
         "branch" : "main",
-        "revision" : "b01f7ed41a527c3751b90d48ed1d8c2ea0022ee3"
+        "revision" : "f7ee5ce04d8f88aceb5caab316f4aa3725b1b3dc"
       }
     },
     {
       "identity" : "navigation-flow",
       "kind" : "remoteSourceControl",
-      "location" : "https://gogs.miejoy.com:4443/Swift/navigation-flow.git",
+      "location" : "https://github.com/miejoy/navigation-flow.git",
       "state" : {
-        "branch" : "master",
-        "revision" : "af6c5ea4e8d4280625643663c96b739fa1c14076"
+        "branch" : "main",
+        "revision" : "c63083c04b4f18cc1bd025dd3f650d20ecfe9d5a"
       }
     },
     {
@@ -33,7 +33,7 @@
       "location" : "https://github.com/miejoy/present-flow.git",
       "state" : {
         "branch" : "main",
-        "revision" : "48b9ab504ba7a9992e910f31cbbea6b601f7daf6"
+        "revision" : "275c18002e19c43f9859e4aeff6d7f267ee9fab5"
       }
     },
     {
@@ -42,7 +42,7 @@
       "location" : "https://github.com/miejoy/view-flow.git",
       "state" : {
         "branch" : "main",
-        "revision" : "d55612b4f10eaa3db55df6cfbd6699d471c7155e"
+        "revision" : "ebb5656e353d33dd12adca2d3f77a2646cd57b61"
       }
     }
   ],
