@@ -15,7 +15,12 @@ import Combine
 @main
 struct DemoAppApp: App {
     // 关联 AppDelegate
+    #if os(iOS)
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    #elseif os(macOS)
+    @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    #endif
+    
     var monitorCancellable: AnyCancellable
     
     init() {

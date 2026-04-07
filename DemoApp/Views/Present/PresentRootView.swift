@@ -56,6 +56,7 @@ struct PresentRootView: View {
             }
             .padding(.bottom, 20)
             
+            #if os(iOS)
             Button(action: {
                 let vc = PresentUIViewController()
                 vc.modalPresentationStyle = .fullScreen
@@ -63,6 +64,7 @@ struct PresentRootView: View {
             }) {
                 Text("Present UIViewController")
             }
+            #endif
 //            Button(action: {
 //                Store<PresentState>.shared.send(action: .present(MailView.self))
 //            }) {

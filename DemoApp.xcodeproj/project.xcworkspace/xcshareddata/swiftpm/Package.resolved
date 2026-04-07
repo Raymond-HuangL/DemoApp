@@ -1,12 +1,31 @@
 {
+  "originHash" : "d9a74b1caf489a74f70e2a7b8667e82fe9b803f445bae1fc0dce7dcafbc9fe07",
   "pins" : [
+    {
+      "identity" : "ability",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/miejoy/ability.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "cb47586c6a6a00f59a211fca6bc9ebe784a0d6b7"
+      }
+    },
     {
       "identity" : "alert-flow",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/miejoy/alert-flow.git",
       "state" : {
         "branch" : "main",
-        "revision" : "f786ca171b6b994ae1734ba0df29dc5d2539885c"
+        "revision" : "e63d051e63c34a4ee6ec9dbf98367905ab0eb0ae"
+      }
+    },
+    {
+      "identity" : "auto-config",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/miejoy/auto-config.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "e410582ddbf079e0143178b68e1f5ee7fbd02d4d"
       }
     },
     {
@@ -15,7 +34,25 @@
       "location" : "https://github.com/miejoy/data-flow.git",
       "state" : {
         "branch" : "main",
-        "revision" : "f7ee5ce04d8f88aceb5caab316f4aa3725b1b3dc"
+        "revision" : "ea9f7d31299bbe0c736ce78ad80b2aad43ea0072"
+      }
+    },
+    {
+      "identity" : "logger",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/miejoy/logger.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "a9e78cb5a4f0d302e0901287337291ed9ccefaa2"
+      }
+    },
+    {
+      "identity" : "module-monitor",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/miejoy/module-monitor.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "1160cf41ccf018ce154819622babe0dd60af12ee"
       }
     },
     {
@@ -24,7 +61,16 @@
       "location" : "https://github.com/miejoy/navigation-flow.git",
       "state" : {
         "branch" : "main",
-        "revision" : "c63083c04b4f18cc1bd025dd3f650d20ecfe9d5a"
+        "revision" : "80300dba18fc3c88f636cf460afb41ad7d88708b"
+      }
+    },
+    {
+      "identity" : "network-ability",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/miejoy/network-ability.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "e76c5abfcfae4c35e6597be65f16de1d7a9f16b7"
       }
     },
     {
@@ -33,7 +79,34 @@
       "location" : "https://github.com/miejoy/present-flow.git",
       "state" : {
         "branch" : "main",
-        "revision" : "275c18002e19c43f9859e4aeff6d7f267ee9fab5"
+        "revision" : "4fb9c3f8cfac6d57b30ac688df0fbc2de16e5c39"
+      }
+    },
+    {
+      "identity" : "push-manager",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/miejoy/push-manager.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "42e4250dfa5e109fd6f03ab0e23070041b415344"
+      }
+    },
+    {
+      "identity" : "toast-flow",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/miejoy/toast-flow.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "0744ccbf993e174f22c4da632e0f39a934de1550"
+      }
+    },
+    {
+      "identity" : "triggerable-action",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/miejoy/triggerable-action.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "478e605b3e0ae22cdff090fa719d07d4d101b404"
       }
     },
     {
@@ -42,9 +115,18 @@
       "location" : "https://github.com/miejoy/view-flow.git",
       "state" : {
         "branch" : "main",
-        "revision" : "ebb5656e353d33dd12adca2d3f77a2646cd57b61"
+        "revision" : "60cefc0131ed18b1c0eeb92141831c95ff8a1007"
+      }
+    },
+    {
+      "identity" : "window-flow",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/miejoy/window-flow.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "7ef8da23ea73c5bb0cd0a088871b076c4ed99da5"
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }

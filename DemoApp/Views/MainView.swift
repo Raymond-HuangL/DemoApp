@@ -33,6 +33,13 @@ struct MainView: View {
                         .font(.system(size: 20))
                     Text("Navigation")
                 }
+            
+            NotificationRootView()
+                .tabItem {
+                    Image(systemName: "circle.grid.3x3")
+                        .font(.system(size: 20))
+                    Text("Push")
+                }
         }
         .modifier(NavigationStackModifier(shared: .main))
         .modifier(AlertModifier())

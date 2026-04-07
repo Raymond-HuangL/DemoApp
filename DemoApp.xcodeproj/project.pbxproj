@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		340156642F2663370011FD12 /* NotificationRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340156632F2663340011FD12 /* NotificationRootView.swift */; };
+		340F0BD32F834EF800DDB50D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340F0BD22F834EF800DDB50D /* SceneDelegate.swift */; };
+		340F0BD52F83FBEF00DDB50D /* UserConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340F0BD42F83FBEC00DDB50D /* UserConfig.swift */; };
 		342E05F22E8975B1001AE335 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342E05F12E8975AA001AE335 /* AppDelegate.swift */; };
 		343EBB252898192600982CD7 /* DemoAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343EBB242898192600982CD7 /* DemoAppApp.swift */; };
 		343EBB272898192600982CD7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343EBB262898192600982CD7 /* ContentView.swift */; };
@@ -22,14 +25,19 @@
 		344FDE992A75265D00F4C53A /* PushFourthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344FDE972A75265D00F4C53A /* PushFourthView.swift */; };
 		344FDE9C2A7526FD00F4C53A /* PushFirstOtherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344FDE9A2A7526FD00F4C53A /* PushFirstOtherView.swift */; };
 		344FDE9D2A7526FD00F4C53A /* PushSecondOtherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344FDE9B2A7526FD00F4C53A /* PushSecondOtherView.swift */; };
+		347EABCE2F7222220049220F /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347EABCD2F72221C0049220F /* NotificationManager.swift */; };
 		34956CA02A45514E002CCE5D /* FlowGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34956C9F2A45514E002CCE5D /* FlowGrid.swift */; };
 		349726AB2C273558000750A2 /* AppPackages in Frameworks */ = {isa = PBXBuildFile; productRef = 349726AA2C273558000750A2 /* AppPackages */; };
+		34B689E02F701FF30079C613 /* NotificationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B689DF2F701F670079C613 /* NotificationDetailView.swift */; };
+		34B689E22F7045590079C613 /* ContentDeliverHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B689E12F7045510079C613 /* ContentDeliverHandler.swift */; };
+		34B69BB72EDAB7520099B963 /* PushManager in Frameworks */ = {isa = PBXBuildFile; productRef = 34B69BB62EDAB7520099B963 /* PushManager */; };
 		34D133F829F5908E00198DEF /* ViewCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D133F729F5908E00198DEF /* ViewCenter.swift */; };
 		34D133FA29F5917E00198DEF /* PresentUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D133F929F5917E00198DEF /* PresentUIViewController.swift */; };
 		34D4D9ED29BE186200023F0B /* SecondAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D4D9EC29BE186200023F0B /* SecondAlertView.swift */; };
 		34EC0A4C2A74002A0093EA41 /* NavigationRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EC0A4B2A74002A0093EA41 /* NavigationRootView.swift */; };
 		34EC0A4E2A7403700093EA41 /* PushFirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EC0A4D2A7403700093EA41 /* PushFirstView.swift */; };
 		34EC21F92958519D00E11186 /* AlertRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EC21F82958519D00E11186 /* AlertRootView.swift */; };
+		34EE33FA2F227A6B00E478D8 /* NotificationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EE33F92F227A6500E478D8 /* NotificationState.swift */; };
 		34F6FAC528DB69960094F736 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F6FAC428DB69960094F736 /* MainView.swift */; };
 		34F6FAC828DB6AFD0094F736 /* PresentRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F6FAC728DB6AFD0094F736 /* PresentRootView.swift */; };
 		34F6FACA28DC98FB0094F736 /* PresentFirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F6FAC928DC98FB0094F736 /* PresentFirstView.swift */; };
@@ -61,6 +69,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		340156632F2663340011FD12 /* NotificationRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationRootView.swift; sourceTree = "<group>"; };
+		340F0BD22F834EF800DDB50D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		340F0BD42F83FBEC00DDB50D /* UserConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserConfig.swift; sourceTree = "<group>"; };
 		342E05F12E8975AA001AE335 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		343EBB212898192600982CD7 /* DemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		343EBB242898192600982CD7 /* DemoAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoAppApp.swift; sourceTree = "<group>"; };
@@ -81,14 +92,19 @@
 		344FDE972A75265D00F4C53A /* PushFourthView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushFourthView.swift; sourceTree = "<group>"; };
 		344FDE9A2A7526FD00F4C53A /* PushFirstOtherView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushFirstOtherView.swift; sourceTree = "<group>"; };
 		344FDE9B2A7526FD00F4C53A /* PushSecondOtherView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushSecondOtherView.swift; sourceTree = "<group>"; };
+		347EABCD2F72221C0049220F /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		34956C9F2A45514E002CCE5D /* FlowGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowGrid.swift; sourceTree = "<group>"; };
 		349726A82C2733E2000750A2 /* AppPackages */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = AppPackages; sourceTree = "<group>"; };
+		34B689DF2F701F670079C613 /* NotificationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationDetailView.swift; sourceTree = "<group>"; };
+		34B689E12F7045510079C613 /* ContentDeliverHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentDeliverHandler.swift; sourceTree = "<group>"; };
 		34D133F729F5908E00198DEF /* ViewCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCenter.swift; sourceTree = "<group>"; };
 		34D133F929F5917E00198DEF /* PresentUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentUIViewController.swift; sourceTree = "<group>"; };
 		34D4D9EC29BE186200023F0B /* SecondAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondAlertView.swift; sourceTree = "<group>"; };
 		34EC0A4B2A74002A0093EA41 /* NavigationRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRootView.swift; sourceTree = "<group>"; };
 		34EC0A4D2A7403700093EA41 /* PushFirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushFirstView.swift; sourceTree = "<group>"; };
 		34EC21F82958519D00E11186 /* AlertRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertRootView.swift; sourceTree = "<group>"; };
+		34EE33F92F227A6500E478D8 /* NotificationState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationState.swift; sourceTree = "<group>"; };
+		34EE33FB2F2280D100E478D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		34F6FAC428DB69960094F736 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		34F6FAC728DB6AFD0094F736 /* PresentRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentRootView.swift; sourceTree = "<group>"; };
 		34F6FAC928DC98FB0094F736 /* PresentFirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentFirstView.swift; sourceTree = "<group>"; };
@@ -106,6 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34B69BB72EDAB7520099B963 /* PushManager in Frameworks */,
 				349726AB2C273558000750A2 /* AppPackages in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -127,6 +144,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		340156612F26631A0011FD12 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				34B689E12F7045510079C613 /* ContentDeliverHandler.swift */,
+				34B689DF2F701F670079C613 /* NotificationDetailView.swift */,
+				347EABCD2F72221C0049220F /* NotificationManager.swift */,
+				340156632F2663340011FD12 /* NotificationRootView.swift */,
+				34EE33F92F227A6500E478D8 /* NotificationState.swift */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
 		343EBB182898192600982CD7 = {
 			isa = PBXGroup;
 			children = (
@@ -152,10 +181,12 @@
 		343EBB232898192600982CD7 /* DemoApp */ = {
 			isa = PBXGroup;
 			children = (
+				34EE33FB2F2280D100E478D8 /* Info.plist */,
 				34F6FAC328DB68EF0094F736 /* Views */,
 				343EBB5A289AC04F00982CD7 /* Libs */,
 				343EBB53289AA7CB00982CD7 /* States */,
 				342E05F12E8975AA001AE335 /* AppDelegate.swift */,
+				340F0BD22F834EF800DDB50D /* SceneDelegate.swift */,
 				343EBB242898192600982CD7 /* DemoAppApp.swift */,
 				343EBB262898192600982CD7 /* ContentView.swift */,
 				343EBB56289AAE5B00982CD7 /* FullScreenView.swift */,
@@ -164,6 +195,7 @@
 				343EBB2B2898192900982CD7 /* Preview Content */,
 				343EBB58289AAE6A00982CD7 /* TestPresentedView.swift */,
 				34F6FAD028DC9DED0094F736 /* Constants.swift */,
+				340F0BD42F83FBEC00DDB50D /* UserConfig.swift */,
 				34F6FADC28E1D5FC0094F736 /* MonitorObserver.swift */,
 			);
 			path = DemoApp;
@@ -251,6 +283,7 @@
 		34F6FAC328DB68EF0094F736 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				340156612F26631A0011FD12 /* Notification */,
 				34EC0A4A2A7400080093EA41 /* Navigation */,
 				34EC21F72958517800E11186 /* Alert */,
 				34F6FAC628DB69A50094F736 /* Present */,
@@ -293,6 +326,7 @@
 			name = DemoApp;
 			packageProductDependencies = (
 				349726AA2C273558000750A2 /* AppPackages */,
+				34B69BB62EDAB7520099B963 /* PushManager */,
 			);
 			productName = DemoApp;
 			productReference = 343EBB212898192600982CD7 /* DemoApp.app */;
@@ -342,7 +376,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1400;
-				LastUpgradeCheck = 1400;
+				LastUpgradeCheck = 2640;
 				TargetAttributes = {
 					343EBB202898192600982CD7 = {
 						CreatedOnToolsVersion = 14.0;
@@ -417,22 +451,29 @@
 				342E05F22E8975B1001AE335 /* AppDelegate.swift in Sources */,
 				344FDE992A75265D00F4C53A /* PushFourthView.swift in Sources */,
 				34D133FA29F5917E00198DEF /* PresentUIViewController.swift in Sources */,
+				340F0BD32F834EF800DDB50D /* SceneDelegate.swift in Sources */,
 				343EBB55289AA7DF00982CD7 /* TestPresentState.swift in Sources */,
 				34F6FAD528DCAA890094F736 /* PresentThirdView.swift in Sources */,
 				343EBB57289AAE5B00982CD7 /* FullScreenView.swift in Sources */,
 				34956CA02A45514E002CCE5D /* FlowGrid.swift in Sources */,
 				34EC0A4C2A74002A0093EA41 /* NavigationRootView.swift in Sources */,
+				34B689E02F701FF30079C613 /* NotificationDetailView.swift in Sources */,
+				34EE33FA2F227A6B00E478D8 /* NotificationState.swift in Sources */,
 				34F6FACE28DC99530094F736 /* PresentFourthView.swift in Sources */,
+				347EABCE2F7222220049220F /* NotificationManager.swift in Sources */,
 				34F6FAD128DC9DED0094F736 /* Constants.swift in Sources */,
 				344FDE982A75265D00F4C53A /* PushThirdView.swift in Sources */,
 				34EC21F92958519D00E11186 /* AlertRootView.swift in Sources */,
+				340F0BD52F83FBEF00DDB50D /* UserConfig.swift in Sources */,
 				34D133F829F5908E00198DEF /* ViewCenter.swift in Sources */,
+				340156642F2663370011FD12 /* NotificationRootView.swift in Sources */,
 				343EBB272898192600982CD7 /* ContentView.swift in Sources */,
 				34F6FAD928E059DD0094F736 /* PresentFirstOtherView.swift in Sources */,
 				344FDE952A751EF400F4C53A /* PushSecondView.swift in Sources */,
 				34F6FADB28E0ACCD0094F736 /* PresentSecondOtherView.swift in Sources */,
 				34F6FACC28DC990D0094F736 /* PresentSecondView.swift in Sources */,
 				343EBB252898192600982CD7 /* DemoAppApp.swift in Sources */,
+				34B689E22F7045590079C613 /* ContentDeliverHandler.swift in Sources */,
 				34F6FACA28DC98FB0094F736 /* PresentFirstView.swift in Sources */,
 				34F6FAC828DB6AFD0094F736 /* PresentRootView.swift in Sources */,
 				34EC0A4E2A7403700093EA41 /* PushFirstView.swift in Sources */,
@@ -507,9 +548,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -527,6 +570,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -565,9 +609,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -578,6 +624,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
@@ -589,14 +636,19 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = DemoApp/DemoApp.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"DemoApp/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 2QLCT7DGXB;
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = 2QLCT7DGXB;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DemoApp/Info.plist;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -610,6 +662,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = App_Dev;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = Mac_App_Dev;
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -624,14 +677,19 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = DemoApp/DemoApp.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"DemoApp/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 2QLCT7DGXB;
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = 2QLCT7DGXB;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DemoApp/Info.plist;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -645,6 +703,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = App_Dev;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = Mac_App_Dev;
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -656,10 +715,10 @@
 		343EBB4A2898192900982CD7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 2QLCT7DGXB;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
@@ -679,10 +738,10 @@
 		343EBB4B2898192900982CD7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 2QLCT7DGXB;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
@@ -702,9 +761,9 @@
 		343EBB4D2898192900982CD7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 2QLCT7DGXB;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
@@ -724,9 +783,9 @@
 		343EBB4E2898192900982CD7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 2QLCT7DGXB;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
@@ -788,6 +847,10 @@
 		349726AA2C273558000750A2 /* AppPackages */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = AppPackages;
+		};
+		34B69BB62EDAB7520099B963 /* PushManager */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PushManager;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

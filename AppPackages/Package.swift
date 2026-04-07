@@ -1,4 +1,4 @@
-// swift-tools-version: 5.10
+// swift-tools-version: 6.2
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -23,6 +23,9 @@ let package = Package(
         .package(url: "https://github.com/miejoy/present-flow.git", branch: "main"),
         .package(url: "https://github.com/miejoy/navigation-flow.git", branch: "main"),
         .package(url: "https://github.com/miejoy/alert-flow.git", branch: "main"),
+        .package(url: "https://github.com/miejoy/network-ability.git", branch: "main"),
+        .package(url: "https://github.com/miejoy/toast-flow.git", branch: "main"),
+        .package(url: "https://github.com/miejoy/push-manager.git", branch: "main"),
     ],
     targets: [
         .target(
@@ -33,6 +36,9 @@ let package = Package(
                 .product(name: "PresentFlow", package: "present-flow"),
                 .product(name: "NavigationFlow", package: "navigation-flow"),
                 .product(name: "AlertFlow", package: "alert-flow"),
+                .product(name: "NetworkAbility", package: "network-ability"),
+                .product(name: "ToastFlow", package: "toast-flow"),
+                .product(name: "PushManager", package: "push-manager"),
             ]
         )
     ]

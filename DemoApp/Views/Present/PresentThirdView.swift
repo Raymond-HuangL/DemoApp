@@ -82,6 +82,7 @@ struct PresentThirdView: PresentableView {
                 }
                 .padding(.bottom, 20)
                 
+                #if os(iOS)
                 Button(action: {
                     let vc = PresentUIViewController()
                     vc.modalPresentationStyle = .fullScreen
@@ -89,6 +90,7 @@ struct PresentThirdView: PresentableView {
                 }) {
                     Text("Present UIViewController")
                 }
+                #endif
             }
         }
         VStack {

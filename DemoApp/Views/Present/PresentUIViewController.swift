@@ -6,6 +6,8 @@
 //
 
 import Foundation
+
+#if os(iOS)
 import UIKit
 
 class PresentUIViewController: UIViewController {
@@ -27,3 +29,4 @@ class PresentUIViewController: UIViewController {
         self.dismiss(animated: true)
     }
 }
+#endif

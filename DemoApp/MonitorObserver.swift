@@ -7,11 +7,12 @@
 
 import Foundation
 
-class MonitorObserver: StoreMonitorOberver, PresentMonitorOberver {
+@MainActor
+final class MonitorObserver: StoreMonitorObserver, PresentMonitorObserver {
     
     public static var shared: MonitorObserver = .init()
     
-    public func receiveStoreEvent<State>(_ event: StoreEvent<State>) where State : StorableState {
+    public func receiveStoreEvent(_ event: StoreEvent) {
         switch event {
         case .createStore(let store):
             print("Create store of \(store.stateId)")
@@ -24,7 +25,7 @@ class MonitorObserver: StoreMonitorOberver, PresentMonitorOberver {
         case .willDirectUpdateStateOn(let store, let newState):
             print("State of \(store.stateId) will update to \(newState)")
         case .willDirectUpdateStateValueOn(let store, let keyPath, let newState):
-            print("State of \(store.stateId) will update \(keyPath) from \(store.state[keyPath: keyPath]) to \(newState)")
+            print("State of \(store.stateId) will update \(keyPath) from \(store.state[keyPath: keyPath] ?? "") to \(newState)")
         case .didUpdateStateOn(let store, _):
             print("State of \(store.stateId) did update to \(store.state)")
         case .reduceInOtherReduce(let store, let curAction, let otherAction):

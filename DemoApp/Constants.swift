@@ -18,3 +18,5 @@ enum RouteTo {
 let s_ViewRouteFirst = ViewRoute<Void>("first")
 
 let s_appSceneId: SceneId = .custom("Second")
+
+let s_serverHost = "https://testapp.miejoy.com:4443/DemoApp"

@@ -71,7 +71,9 @@ struct AlertRootView: View {
             Button {
                 let alertId = alertManager.showAlert("This alert will auto dismiss")
                 Timer.scheduledTimer(withTimeInterval: 2, repeats: false) { timer in
-                    alertManager.dismissAlert(with: alertId)
+                    Task { @MainActor in
+                        alertManager.dismissAlert(with: alertId)
+                    }
                 }
             } label: {
                 Text("Show Alert Auto Dismiss")
@@ -80,7 +82,9 @@ struct AlertRootView: View {
                 alertManager.showAlert("This is first alert")
                 let alertId = alertManager.showAlert("This alert will auto dismiss")
                 Timer.scheduledTimer(withTimeInterval: 2, repeats: false) { timer in
-                    alertManager.dismissAlert(with: alertId)
+                    Task { @MainActor in
+                        alertManager.dismissAlert(with: alertId)
+                    }
                 }
             } label: {
                 Text("Show Two Alert, Auto Dismiss Last")

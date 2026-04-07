@@ -55,6 +55,7 @@ struct PresentFirstView: VoidPresentableView {
                 }
                 .padding(.bottom, 20)
                 
+                #if os(iOS)
                 Button(action: {
                     let vc = PresentUIViewController()
                     vc.modalPresentationStyle = .fullScreen
@@ -62,6 +63,7 @@ struct PresentFirstView: VoidPresentableView {
                 }) {
                     Text("Present UIViewController")
                 }
+                #endif
                    
             }
             VStack {
