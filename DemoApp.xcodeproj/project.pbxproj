@@ -28,9 +28,9 @@
 		347EABCE2F7222220049220F /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347EABCD2F72221C0049220F /* NotificationManager.swift */; };
 		34956CA02A45514E002CCE5D /* FlowGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34956C9F2A45514E002CCE5D /* FlowGrid.swift */; };
 		349726AB2C273558000750A2 /* AppPackages in Frameworks */ = {isa = PBXBuildFile; productRef = 349726AA2C273558000750A2 /* AppPackages */; };
+		34A4A8572FA5FB5B001644BC /* KeychainRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A4A8552FA5FB5B001644BC /* KeychainRootView.swift */; };
 		34B689E02F701FF30079C613 /* NotificationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B689DF2F701F670079C613 /* NotificationDetailView.swift */; };
 		34B689E22F7045590079C613 /* ContentDeliverHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B689E12F7045510079C613 /* ContentDeliverHandler.swift */; };
-		34B69BB72EDAB7520099B963 /* PushManager in Frameworks */ = {isa = PBXBuildFile; productRef = 34B69BB62EDAB7520099B963 /* PushManager */; };
 		34D133F829F5908E00198DEF /* ViewCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D133F729F5908E00198DEF /* ViewCenter.swift */; };
 		34D133FA29F5917E00198DEF /* PresentUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D133F929F5917E00198DEF /* PresentUIViewController.swift */; };
 		34D4D9ED29BE186200023F0B /* SecondAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D4D9EC29BE186200023F0B /* SecondAlertView.swift */; };
@@ -95,6 +95,7 @@
 		347EABCD2F72221C0049220F /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		34956C9F2A45514E002CCE5D /* FlowGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowGrid.swift; sourceTree = "<group>"; };
 		349726A82C2733E2000750A2 /* AppPackages */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = AppPackages; sourceTree = "<group>"; };
+		34A4A8552FA5FB5B001644BC /* KeychainRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainRootView.swift; sourceTree = "<group>"; };
 		34B689DF2F701F670079C613 /* NotificationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationDetailView.swift; sourceTree = "<group>"; };
 		34B689E12F7045510079C613 /* ContentDeliverHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentDeliverHandler.swift; sourceTree = "<group>"; };
 		34D133F729F5908E00198DEF /* ViewCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCenter.swift; sourceTree = "<group>"; };
@@ -122,7 +123,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34B69BB72EDAB7520099B963 /* PushManager in Frameworks */,
 				349726AB2C273558000750A2 /* AppPackages in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,6 +257,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		34A4A8562FA5FB5B001644BC /* Keychain */ = {
+			isa = PBXGroup;
+			children = (
+				34A4A8552FA5FB5B001644BC /* KeychainRootView.swift */,
+			);
+			path = Keychain;
+			sourceTree = "<group>";
+		};
 		34EC0A4A2A7400080093EA41 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
@@ -283,6 +291,7 @@
 		34F6FAC328DB68EF0094F736 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				34A4A8562FA5FB5B001644BC /* Keychain */,
 				340156612F26631A0011FD12 /* Notification */,
 				34EC0A4A2A7400080093EA41 /* Navigation */,
 				34EC21F72958517800E11186 /* Alert */,
@@ -327,6 +336,7 @@
 			packageProductDependencies = (
 				349726AA2C273558000750A2 /* AppPackages */,
 				34B69BB62EDAB7520099B963 /* PushManager */,
+				34A4A85A2FA610E4001644BC /* KeychainWrapper */,
 			);
 			productName = DemoApp;
 			productReference = 343EBB212898192600982CD7 /* DemoApp.app */;
@@ -476,6 +486,7 @@
 				34B689E22F7045590079C613 /* ContentDeliverHandler.swift in Sources */,
 				34F6FACA28DC98FB0094F736 /* PresentFirstView.swift in Sources */,
 				34F6FAC828DB6AFD0094F736 /* PresentRootView.swift in Sources */,
+				34A4A8572FA5FB5B001644BC /* KeychainRootView.swift in Sources */,
 				34EC0A4E2A7403700093EA41 /* PushFirstView.swift in Sources */,
 				344FDE9D2A7526FD00F4C53A /* PushSecondOtherView.swift in Sources */,
 				34F6FACF28DC9D1F0094F736 /* TestPresentedView.swift in Sources */,
@@ -847,6 +858,10 @@
 		349726AA2C273558000750A2 /* AppPackages */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = AppPackages;
+		};
+		34A4A85A2FA610E4001644BC /* KeychainWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = KeychainWrapper;
 		};
 		34B69BB62EDAB7520099B963 /* PushManager */ = {
 			isa = XCSwiftPackageProductDependency;

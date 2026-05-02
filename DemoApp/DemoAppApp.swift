@@ -7,6 +7,7 @@
 
 import SwiftUI
 import Combine
+import KeychainWrapper
 @_exported import DataFlow
 @_exported import PresentFlow
 @_exported import NavigationFlow
@@ -27,6 +28,10 @@ struct DemoAppApp: App {
         self.monitorCancellable = PresentMonitor.shared.addObserver(MonitorObserver.shared)
         NavigationCenter.shared.registerDefaultPushableView(PushFirstView.self)
         NavigationCenter.shared.registerDefaultPushableView(PushFirstOtherView.self)
+        KeychainWrapper.configDefault(
+            with: Bundle.main.bundleIdentifier ?? "com.miejoy.App",
+            accessGroup: nil
+        )
     }
     
     var body: some Scene {

@@ -40,6 +40,13 @@ struct MainView: View {
                         .font(.system(size: 20))
                     Text("Push")
                 }
+            
+            KeychainRootView()
+                .tabItem {
+                    Image(systemName: "key")
+                        .font(.system(size: 20))
+                    Text("Keychain")
+                }
         }
         .modifier(NavigationStackModifier(shared: .main))
         .modifier(AlertModifier())

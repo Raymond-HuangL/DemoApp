@@ -26,6 +26,7 @@ let package = Package(
         .package(url: "https://github.com/miejoy/network-ability.git", branch: "main"),
         .package(url: "https://github.com/miejoy/toast-flow.git", branch: "main"),
         .package(url: "https://github.com/miejoy/push-manager.git", branch: "main"),
+        .package(url: "https://github.com/miejoy/keychain-wrapper.git", branch: "main"),
     ],
     targets: [
         .target(
@@ -39,6 +40,7 @@ let package = Package(
                 .product(name: "NetworkAbility", package: "network-ability"),
                 .product(name: "ToastFlow", package: "toast-flow"),
                 .product(name: "PushManager", package: "push-manager"),
+                .product(name: "KeychainWrapper", package: "keychain-wrapper"),
             ]
         )
     ]
